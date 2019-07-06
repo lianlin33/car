@@ -1,0 +1,20 @@
+mixin creatbox(photo,title,content)
+    img(src="phoro")
+    h2=title
+    p=content
+<!DOCTYPE html>
+html(lang="zh")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+    body
+        .banner
+            h1 Logo
+            a(href="#") 導覽頁
+            a(href="#") 導覽頁
+            a(href="#") 導覽頁
+        .about
+            h1 標題
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, non nihil? Pariatur, vero illo blanditiis quo dolorum aliquid praesentium non delectus voluptatibus cumque eveniet inventore.
+            +creatbox("car1.png","car1","Lorem")
