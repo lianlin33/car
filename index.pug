@@ -1,5 +1,5 @@
 mixin creatbox(photo,title,content)
-    img(src="photo")
+    img(src=photo)
     h2=title
     p=content
 <!DOCTYPE html>
@@ -7,14 +7,27 @@ html(lang="zh")
     head
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title Document
+        title Car Web
     body
         .banner
-            h1 Logo
-            a(href="#") 導覽頁
-            a(href="#") 導覽頁
-            a(href="#") 導覽頁
+            ul
+                li
+                    a(href="#") 連結
+                li
+                    a(href="#") Logo
+                li
+                    a(href="#") 連結
         .about
             h1 標題
             p Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, non nihil? Pariatur, vero illo blanditiis quo dolorum aliquid praesentium non delectus voluptatibus cumque eveniet inventore.
-            +creatbox("car1.png","car1","sjdfjoajfdjaojfddjfjpdjfia")
+        .product    
+            +creatbox("car1.png","car1","ipsum dolor sit amet consectetur adipisicing")
+            +creatbox("car2.png","car2","ipsum dolor sit amet consectetur adipisicing")
+            +creatbox("car3.png","car3","ipsum dolor sit amet consectetur adipisicing")
+        .content
+            .pic
+                img(src="about.png")
+            .message
+                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus asperiores temporibus incidunt voluptatibus laboriosam culpa!
+        flooter
+            P CAR &copy 2019
