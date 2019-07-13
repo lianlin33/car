@@ -3,36 +3,47 @@
   <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
     <title>Car Web</title>
   </head>
   <body>
     <div class="banner">
       <ul>
         <li><a href="#">連結</a></li>
-        <li><a href="#">Logo</a></li>
+        <li><a href="#" id="logo" data-aos="fade-down" data-aos-delay="50" data-aos-duration="5000">Logo</a></li>
         <li><a href="#">連結</a></li>
       </ul>
     </div>
     <div class="about">
       <h1>標題</h1>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, non nihil? Pariatur, vero illo blanditiis quo dolorum aliquid praesentium non delectus voluptatibus cumque eveniet inventore.</p>
-    </div>
-    <div class="product">   <img src="car1.png"/>
-      <h2>car1</h2>
-      <p>ipsum dolor sit amet consectetur adipisicing</p><img src="car2.png"/>
-      <h2>car2</h2>
-      <p>ipsum dolor sit amet consectetur adipisicing</p><img src="car3.png"/>
-      <h2>car3</h2>
-      <p>ipsum dolor sit amet consectetur adipisicing</p>
+      <div class="product">   
+        <div class="productbox"><img src="car1.png" data-aos="flip-left" data-aos-delay="400" data-aos-duration="5000"/>
+          <h2>car1</h2>
+          <p>ipsum dolor sit amet consectetur adipisicing</p>
+        </div>
+        <div class="productbox"><img src="car2.png" data-aos="flip-left" data-aos-delay="800" data-aos-duration="5000"/>
+          <h2>car2</h2>
+          <p>ipsum dolor sit amet consectetur adipisicing</p>
+        </div>
+        <div class="productbox"><img src="car3.png" data-aos="flip-left" data-aos-delay="1200" data-aos-duration="5000"/>
+          <h2>car3</h2>
+          <p>ipsum dolor sit amet consectetur adipisicing</p>
+        </div>
+      </div>
     </div>
     <div class="content">
-      <div class="pic"><img src="about.png"/></div>
+      <div class="pic"><img src="about.png" data-aos="fade-down" data-aos-delay="50" data-aos-duration="1000"/></div>
       <div class="message">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus asperiores temporibus incidunt voluptatibus laboriosam culpa!</p>
       </div>
     </div>
     <flooter>
       <P>CAR &copy 2019</P>
-    </flooter>
+    </flooter><script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+       AOS.init();
+    </script>
   </body>
 </html>

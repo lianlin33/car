@@ -1,0 +1,92 @@
+@import url("https://meyerweb.com/eric/tools/css/reset/reset.css");
+.banner {
+  background-image: url(banner.png);
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+.banner ul {
+  list-style: none;
+  text-align: center;
+}
+
+.banner ul li {
+  margin: 85px auto;
+  display: inline-block;
+  padding: 20px  50px;
+}
+
+.banner ul li a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  vertical-align: top;
+  font-size: 30px;
+}
+
+.banner ul li #logo {
+  font-size: 72px;
+}
+
+.about {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about h1 {
+  font-size: 60px;
+  font-weight: 500px;
+  margin: 49px 0 64px 0;
+}
+
+.about p {
+  font-size: 20px;
+  padding-bottom: 62px;
+}
+
+.about .product {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  grid-gap: 20px;
+}
+
+.about .product .productbox h2 {
+  font-size: 48px;
+  margin: 37px 0 36px 0;
+}
+
+.about .product .productbox p {
+  padding-bottom: 108px;
+  font-size: 20px;
+}
+
+.about .product .productbox img {
+  width: 100%;
+}
+
+.content {
+  width: 1200px;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  grid-gap: 50px;
+}
+
+.content .message {
+  margin: 100px 0 0 0;
+}
+
+flooter {
+  text-align: center;
+  font-size: 20px;
+}
+
+flooter p {
+  margin: 243px 0 100px 0;
+}
+/*# sourceMappingURL=style.css.map */

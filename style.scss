@@ -1,0 +1,90 @@
+@import url("https://meyerweb.com/eric/tools/css/reset/reset.css");
+$contentfont:20px;
+
+*{
+    // border: 1px solid red !important;
+}
+.banner{
+    background-image: url(banner.png);
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    ul{
+        list-style: none; 
+        text-align: center;   
+        li{
+            margin: 85px auto;
+            display: inline-block;
+            padding:20px  50px ;
+
+            a{
+                color: rgba(255, 255, 255, 0.8);
+                text-decoration: none;
+                vertical-align: top;
+                font-size: 30px;
+
+            }
+            #logo{
+                    font-size: 72px;
+            }
+        }
+    }
+}
+.about{
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    
+    h1{
+        font-size: 60px;
+        font-weight: 500px;
+        margin: 49px 0 64px 0;
+    }
+
+    p{
+        font-size: $contentfont;
+        padding-bottom: 62px;
+    }
+
+    .product{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 20px;
+
+        .productbox{
+
+            h2{
+                font-size: 48px;
+                margin: 37px 0 36px 0;
+            }
+
+            p{
+                padding-bottom: 108px;
+                font-size: $contentfont;
+            }
+
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+.content{
+    width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 50px;
+    
+    .message{
+        margin: 100px 0 0 0 ;
+    }
+}
+flooter{
+    text-align: center;
+    font-size: $contentfont;
+
+    p{
+        margin:243px 0 100px 0 ;
+    }
+}

@@ -1,12 +1,15 @@
-mixin creatbox(photo,title,content)
-    img(src=photo)
-    h2=title
-    p=content
+mixin creatbox(photo,title,content,delay)
+    .productbox
+        img(src=photo data-aos="flip-left" data-aos-delay=delay data-aos-duration="5000")
+        h2=title
+        p=content
 <!DOCTYPE html>
 html(lang="zh")
     head
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="style.css")
+        link(rel="stylesheet", href="https://unpkg.com/aos@next/dist/aos.css")
         title Car Web
     body
         .banner
@@ -14,20 +17,24 @@ html(lang="zh")
                 li
                     a(href="#") 連結
                 li
-                    a(href="#") Logo
+                    a(href="#" id="logo" data-aos="fade-down" data-aos-delay="50" data-aos-duration="5000") Logo
                 li
                     a(href="#") 連結
         .about
             h1 標題
             p Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, non nihil? Pariatur, vero illo blanditiis quo dolorum aliquid praesentium non delectus voluptatibus cumque eveniet inventore.
-        .product    
-            +creatbox("car1.png","car1","ipsum dolor sit amet consectetur adipisicing")
-            +creatbox("car2.png","car2","ipsum dolor sit amet consectetur adipisicing")
-            +creatbox("car3.png","car3","ipsum dolor sit amet consectetur adipisicing")
+            .product    
+                +creatbox("car1.png","car1","ipsum dolor sit amet consectetur adipisicing",400)
+                +creatbox("car2.png","car2","ipsum dolor sit amet consectetur adipisicing",800)
+                +creatbox("car3.png","car3","ipsum dolor sit amet consectetur adipisicing",1200)
         .content
             .pic
-                img(src="about.png")
+                img(src="about.png" data-aos="fade-down" data-aos-delay="50" data-aos-duration="1000")
             .message
                 p Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus asperiores temporibus incidunt voluptatibus laboriosam culpa!
         flooter
             P CAR &copy 2019
+        |<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        |<script>
+        |    AOS.init();
+        |</script>
